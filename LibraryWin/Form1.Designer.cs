@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.lblName = new System.Windows.Forms.Label();
-            this.lblISBN = new System.Windows.Forms.Label();
             this.lblAuthor = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblGenre = new System.Windows.Forms.Label();
@@ -40,11 +39,10 @@
             this.radDis = new System.Windows.Forms.RadioButton();
             this.radIll = new System.Windows.Forms.RadioButton();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.txtISBN = new System.Windows.Forms.TextBox();
             this.txtAuthor = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtGenre = new System.Windows.Forms.TextBox();
-            this.txtQuan = new System.Windows.Forms.TextBox();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
             this.txtPages = new System.Windows.Forms.TextBox();
             this.txtLength = new System.Windows.Forms.TextBox();
             this.lblLength = new System.Windows.Forms.Label();
@@ -70,19 +68,10 @@
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name";
             // 
-            // lblISBN
-            // 
-            this.lblISBN.AutoSize = true;
-            this.lblISBN.Location = new System.Drawing.Point(269, 66);
-            this.lblISBN.Name = "lblISBN";
-            this.lblISBN.Size = new System.Drawing.Size(32, 13);
-            this.lblISBN.TabIndex = 1;
-            this.lblISBN.Text = "ISBN";
-            // 
             // lblAuthor
             // 
             this.lblAuthor.AutoSize = true;
-            this.lblAuthor.Location = new System.Drawing.Point(269, 106);
+            this.lblAuthor.Location = new System.Drawing.Point(269, 74);
             this.lblAuthor.Name = "lblAuthor";
             this.lblAuthor.Size = new System.Drawing.Size(38, 13);
             this.lblAuthor.TabIndex = 2;
@@ -91,7 +80,7 @@
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
-            this.lblPrice.Location = new System.Drawing.Point(266, 146);
+            this.lblPrice.Location = new System.Drawing.Point(266, 114);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(31, 13);
             this.lblPrice.TabIndex = 3;
@@ -100,7 +89,7 @@
             // lblGenre
             // 
             this.lblGenre.AutoSize = true;
-            this.lblGenre.Location = new System.Drawing.Point(269, 193);
+            this.lblGenre.Location = new System.Drawing.Point(269, 161);
             this.lblGenre.Name = "lblGenre";
             this.lblGenre.Size = new System.Drawing.Size(36, 13);
             this.lblGenre.TabIndex = 4;
@@ -109,7 +98,7 @@
             // lblQuan
             // 
             this.lblQuan.AutoSize = true;
-            this.lblQuan.Location = new System.Drawing.Point(269, 230);
+            this.lblQuan.Location = new System.Drawing.Point(269, 198);
             this.lblQuan.Name = "lblQuan";
             this.lblQuan.Size = new System.Drawing.Size(46, 13);
             this.lblQuan.TabIndex = 5;
@@ -118,7 +107,7 @@
             // lblPages
             // 
             this.lblPages.AutoSize = true;
-            this.lblPages.Location = new System.Drawing.Point(269, 277);
+            this.lblPages.Location = new System.Drawing.Point(269, 245);
             this.lblPages.Name = "lblPages";
             this.lblPages.Size = new System.Drawing.Size(37, 13);
             this.lblPages.TabIndex = 6;
@@ -180,44 +169,37 @@
             this.txtName.Size = new System.Drawing.Size(100, 20);
             this.txtName.TabIndex = 11;
             // 
-            // txtISBN
-            // 
-            this.txtISBN.Location = new System.Drawing.Point(149, 63);
-            this.txtISBN.Name = "txtISBN";
-            this.txtISBN.Size = new System.Drawing.Size(100, 20);
-            this.txtISBN.TabIndex = 12;
-            // 
             // txtAuthor
             // 
-            this.txtAuthor.Location = new System.Drawing.Point(149, 103);
+            this.txtAuthor.Location = new System.Drawing.Point(149, 71);
             this.txtAuthor.Name = "txtAuthor";
             this.txtAuthor.Size = new System.Drawing.Size(100, 20);
             this.txtAuthor.TabIndex = 13;
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(146, 146);
+            this.txtPrice.Location = new System.Drawing.Point(146, 114);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(100, 20);
             this.txtPrice.TabIndex = 14;
             // 
             // txtGenre
             // 
-            this.txtGenre.Location = new System.Drawing.Point(149, 193);
+            this.txtGenre.Location = new System.Drawing.Point(149, 161);
             this.txtGenre.Name = "txtGenre";
             this.txtGenre.Size = new System.Drawing.Size(100, 20);
             this.txtGenre.TabIndex = 15;
             // 
-            // txtQuan
+            // txtQuantity
             // 
-            this.txtQuan.Location = new System.Drawing.Point(149, 230);
-            this.txtQuan.Name = "txtQuan";
-            this.txtQuan.Size = new System.Drawing.Size(100, 20);
-            this.txtQuan.TabIndex = 16;
+            this.txtQuantity.Location = new System.Drawing.Point(149, 198);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(100, 20);
+            this.txtQuantity.TabIndex = 16;
             // 
             // txtPages
             // 
-            this.txtPages.Location = new System.Drawing.Point(149, 277);
+            this.txtPages.Location = new System.Drawing.Point(149, 245);
             this.txtPages.Name = "txtPages";
             this.txtPages.Size = new System.Drawing.Size(100, 20);
             this.txtPages.TabIndex = 17;
@@ -225,7 +207,7 @@
             // 
             // txtLength
             // 
-            this.txtLength.Location = new System.Drawing.Point(149, 318);
+            this.txtLength.Location = new System.Drawing.Point(149, 286);
             this.txtLength.Name = "txtLength";
             this.txtLength.Size = new System.Drawing.Size(100, 20);
             this.txtLength.TabIndex = 19;
@@ -234,7 +216,7 @@
             // lblLength
             // 
             this.lblLength.AutoSize = true;
-            this.lblLength.Location = new System.Drawing.Point(269, 318);
+            this.lblLength.Location = new System.Drawing.Point(269, 286);
             this.lblLength.Name = "lblLength";
             this.lblLength.Size = new System.Drawing.Size(40, 13);
             this.lblLength.TabIndex = 18;
@@ -243,7 +225,7 @@
             // 
             // txtNar
             // 
-            this.txtNar.Location = new System.Drawing.Point(149, 277);
+            this.txtNar.Location = new System.Drawing.Point(149, 245);
             this.txtNar.Name = "txtNar";
             this.txtNar.Size = new System.Drawing.Size(100, 20);
             this.txtNar.TabIndex = 21;
@@ -252,7 +234,7 @@
             // lblNar
             // 
             this.lblNar.AutoSize = true;
-            this.lblNar.Location = new System.Drawing.Point(269, 277);
+            this.lblNar.Location = new System.Drawing.Point(269, 245);
             this.lblNar.Name = "lblNar";
             this.lblNar.Size = new System.Drawing.Size(45, 13);
             this.lblNar.TabIndex = 20;
@@ -261,7 +243,7 @@
             // 
             // txtDis
             // 
-            this.txtDis.Location = new System.Drawing.Point(149, 277);
+            this.txtDis.Location = new System.Drawing.Point(149, 245);
             this.txtDis.Name = "txtDis";
             this.txtDis.Size = new System.Drawing.Size(100, 20);
             this.txtDis.TabIndex = 23;
@@ -270,7 +252,7 @@
             // lblDis
             // 
             this.lblDis.AutoSize = true;
-            this.lblDis.Location = new System.Drawing.Point(269, 277);
+            this.lblDis.Location = new System.Drawing.Point(269, 245);
             this.lblDis.Name = "lblDis";
             this.lblDis.Size = new System.Drawing.Size(49, 13);
             this.lblDis.TabIndex = 22;
@@ -279,7 +261,7 @@
             // 
             // txtIllPgs
             // 
-            this.txtIllPgs.Location = new System.Drawing.Point(149, 366);
+            this.txtIllPgs.Location = new System.Drawing.Point(149, 334);
             this.txtIllPgs.Name = "txtIllPgs";
             this.txtIllPgs.Size = new System.Drawing.Size(100, 20);
             this.txtIllPgs.TabIndex = 27;
@@ -288,7 +270,7 @@
             // lblIllPgs
             // 
             this.lblIllPgs.AutoSize = true;
-            this.lblIllPgs.Location = new System.Drawing.Point(269, 369);
+            this.lblIllPgs.Location = new System.Drawing.Point(269, 337);
             this.lblIllPgs.Name = "lblIllPgs";
             this.lblIllPgs.Size = new System.Drawing.Size(85, 13);
             this.lblIllPgs.TabIndex = 26;
@@ -297,7 +279,7 @@
             // 
             // txtIll
             // 
-            this.txtIll.Location = new System.Drawing.Point(149, 318);
+            this.txtIll.Location = new System.Drawing.Point(149, 286);
             this.txtIll.Name = "txtIll";
             this.txtIll.Size = new System.Drawing.Size(100, 20);
             this.txtIll.TabIndex = 25;
@@ -306,7 +288,7 @@
             // lblIll
             // 
             this.lblIll.AutoSize = true;
-            this.lblIll.Location = new System.Drawing.Point(266, 318);
+            this.lblIll.Location = new System.Drawing.Point(266, 286);
             this.lblIll.Name = "lblIll";
             this.lblIll.Size = new System.Drawing.Size(49, 13);
             this.lblIll.TabIndex = 24;
@@ -329,6 +311,7 @@
             this.btnDis.TabIndex = 29;
             this.btnDis.Text = "Display";
             this.btnDis.UseVisualStyleBackColor = true;
+            this.btnDis.Click += new System.EventHandler(this.btnDis_Click);
             // 
             // btnCreate
             // 
@@ -338,6 +321,7 @@
             this.btnCreate.TabIndex = 30;
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // Form1
             // 
@@ -358,11 +342,10 @@
             this.Controls.Add(this.txtLength);
             this.Controls.Add(this.lblLength);
             this.Controls.Add(this.txtPages);
-            this.Controls.Add(this.txtQuan);
+            this.Controls.Add(this.txtQuantity);
             this.Controls.Add(this.txtGenre);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtAuthor);
-            this.Controls.Add(this.txtISBN);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.radIll);
             this.Controls.Add(this.radDis);
@@ -373,7 +356,6 @@
             this.Controls.Add(this.lblGenre);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblAuthor);
-            this.Controls.Add(this.lblISBN);
             this.Controls.Add(this.lblName);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -385,7 +367,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.Label lblISBN;
         private System.Windows.Forms.Label lblAuthor;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblGenre;
@@ -396,11 +377,10 @@
         private System.Windows.Forms.RadioButton radDis;
         private System.Windows.Forms.RadioButton radIll;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox txtISBN;
         private System.Windows.Forms.TextBox txtAuthor;
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.TextBox txtGenre;
-        private System.Windows.Forms.TextBox txtQuan;
+        private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.TextBox txtPages;
         private System.Windows.Forms.TextBox txtLength;
         private System.Windows.Forms.Label lblLength;
