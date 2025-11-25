@@ -13,7 +13,7 @@ namespace Library
         private string Illustrator;
         private int illustrationPages;
 
-        public Illustrated(string myName, int myIsbn, string myAuthor, double myPrice, string myGenre, int myQuantity, int myPages, string myIllustrator, int myIllustrationPages)
+        public Illustrated(string myName, int myIsbn, string myAuthor, double myPrice, string myGenre, int myQuantity, int myPages, string myIllustrator, int myIllustratedPages)
         {
             name = myName;
             isbn = myIsbn;
@@ -23,7 +23,7 @@ namespace Library
             quantity = myQuantity;
             pages = myPages;
             Illustrator = myIllustrator;
-            illustrationPages = myIllustrationPages;
+            illustrationPages = myIllustratedPages;
         }
 
         //display percent of pages that are illustrations
